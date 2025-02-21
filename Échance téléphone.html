@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur d'Échange iPhone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            text-align: center;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calculateur d'Échange iPhone de Sylla High Tech</h1>
+
+        <!-- iPhone actuel du client -->
+        <label for="modelActuel">Votre iPhone actuel :</label>
+        <select id="modelActuel">
+            <option value="iPhone 16 Pro Max">iPhone 16 Pro Max</option>
+            <option value="iPhone 16 Pro">iPhone 16 Pro</option>
+            <option value="iPhone 16">iPhone 16</option>
+            <option value="iPhone 15 Pro Max">iPhone 15 Pro Max</option>
+            <option value="iPhone 15 Pro">iPhone 15 Pro</option>
+            <option value="iPhone 15">iPhone 13</option>
+            <option value="iPhone 14 Pro Max">iPhone 14 Pro Max</option>
+            <option value="iPhone 14 Pro">iPhone 14 Pro</option>
+            <option value="iPhone 14">iPhone 14</option>
+            <option value="iPhone 13 Pro Max">iPhone 13 Pro Max</option>
+            <option value="iPhone 13 Pro">iPhone 13 Pro</option>
+            <option value="iPhone 13">iPhone 13</option>
+            <option value="iPhone 12 Pro Max">iPhone 12 Pro Max</option>
+            <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+            <option value="iPhone 12">iPhone 12</option>
+            <option value="iPhone 11 Pro Max">iPhone 11 Pro Max</option>
+            <option value="iPhone 11 Pro">iPhone 11 Pro</option>
+            <option value="iPhone 11">iPhone 11</option>
+            <option value="iPhone XS Max">iPhone XS Max</option>
+            <option value="iPhone XS">iPhone XS</option>
+            <option value="iPhone XR">iPhone XR</option>
+            <option value="iPhone X">iPhone X</option>
+            <option value="iPhone 8 Plus">iPhone 8 Plus</option>
+            <option value="iPhone 8">iPhone 8</option>
+            <option value="iPhone 7 Plus">iPhone 7 Plus</option>
+            <option value="iPhone 7">iPhone 7</option>
+            <option value="iPhone 6s Plus">iPhone 6s Plus</option>
+            <option value="iPhone 6s">iPhone 6s</option>
+            <option value="iPhone SE (2020)">iPhone SE (2020)</option>
+        </select>
+
+        <!-- État de l'écran -->
+        <label for="etatEcran">État de l'écran :</label>
+        <select id="etatEcran">
+            <option value="intact">Intact</option>
+            <option value="casse">Cassé</option>
+        </select>
+
+        <!-- État de la batterie -->
+        <label for="etatBatterie">État de la batterie :</label>
+        <select id="etatBatterie">
+            <option value="100">100%</option>
+            <option value="90">90%</option>
+            <option value="80">80%</option>
+            <option value="70">70% ou moins</option>
+        </select>
+
+        <!-- Nouvel iPhone souhaité -->
+        <label for="modelNouveau">Nouvel iPhone souhaité :</label>
+        <select id="modelNouveau">
+            <option value="iPhone 16e">iPhone 16e</option>
+            <option value="iPhone 16 Pro Max">iPhone 16 Pro Max</option>
+            <option value="iPhone 16 Pro">iPhone 16 Pro</option>
+            <option value="iPhone 16">iPhone 16</option>
+            <option value="iPhone 15 Pro Max">iPhone 15 Pro Max</option>
+            <option value="iPhone 15 Pro">iPhone 15 Pro</option>
+            <option value="iPhone 15">iPhone 13</option>
+            <option value="iPhone 14 Pro Max">iPhone 14 Pro Max</option>
+            <option value="iPhone 14 Pro">iPhone 14 Pro</option>
+            <option value="iPhone 14">iPhone 14</option>
+            <option value="iPhone 13 Pro Max">iPhone 13 Pro Max</option>
+            <option value="iPhone 13 Pro">iPhone 13 Pro</option>
+            <option value="iPhone 13">iPhone 13</option>
+            <option value="iPhone 12 Pro Max">iPhone 12 Pro Max</option>
+            <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+            <option value="iPhone 12">iPhone 12</option>
+            <option value="iPhone 11 Pro Max">iPhone 11 Pro Max</option>
+            <option value="iPhone 11 Pro">iPhone 11 Pro</option>
+            <option value="iPhone 11">iPhone 11</option>
+            <option value="iPhone XS Max">iPhone XS Max</option>
+            <option value="iPhone XS">iPhone XS</option>
+            <option value="iPhone XR">iPhone XR</option>
+            <option value="iPhone X">iPhone X</option>
+            <option value="iPhone 8 Plus">iPhone 8 Plus</option>
+            <option value="iPhone 8">iPhone 8</option>
+            <option value="iPhone 7 Plus">iPhone 7 Plus</option>
+            <option value="iPhone 7">iPhone 7</option>
+            <option value="iPhone 6s Plus">iPhone 6s Plus</option>
+            <option value="iPhone 6s">iPhone 6s</option>
+            <option value="iPhone SE (2020)">iPhone SE (2020)</option>
+        </select>
+
+        <button onclick="calculerDifference()">Calculer la Différence</button>
+
+        <!-- Résultat -->
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        const prixBase = {
+            "iPhone 16e": 500000,
+            "iPhone 16 Pro Max": 840000,
+            "iPhone 16 Pro": 650000,
+            "iPhone 16": 570000,
+            "iPhone 15 Pro Max": 620000,
+            "iPhone 15 Pro": 490000,
+            "iPhone 15": 390000,
+            "iPhone 14 Pro Max": 420000,
+            "iPhone 14 Pro": 400000,
+            "iPhone 14": 320000,
+            "iPhone 13 Pro Max": 360000,
+            "iPhone 13 Pro": 290000,
+            "iPhone 13": 260000,
+            "iPhone 12 Pro Max": 290000,
+            "iPhone 12 Pro": 230000,
+            "iPhone 12": 170000,
+            "iPhone 11 Pro Max": 190000,
+            "iPhone 11 Pro": 169000,
+            "iPhone 11": 140000,
+            "iPhone XS Max": 120000,
+            "iPhone XS": 110000,
+            "iPhone XR": 110000,
+            "iPhone X": 95000,
+            "iPhone 8 Plus": 80000,
+            "iPhone 8": 70000,
+            "iPhone 7 Plus": 60000,
+            "iPhone 7": 50000,
+            "iPhone 6s Plus": 40000,
+            "iPhone 6s": 30000,
+            "iPhone SE (2020)": 40000,
+        };
+
+        function calculerDifference() {
+            // Récupérer les valeurs sélectionnées pour l'iPhone actuel
+            const modeleActuel = document.getElementById("modelActuel").value;
+            const etatEcran = document.getElementById("etatEcran").value;
+            const etatBatterie = parseInt(document.getElementById("etatBatterie").value);
+
+            // Calculer le prix de l'iPhone actuel en fonction de l'état de l'écran et de la batterie
+            let prixActuel = prixBase[modeleActuel];
+
+            // Appliquer une majoration si l'écran est cassé
+            if (etatEcran === "casse") {
+                prixActuel *= 0.6; // Réduction de 20%
+            }
+
+            // Appliquer une réduction si la batterie est en dessous de 80%
+            if (etatBatterie < 80) {
+                prixActuel *= 0.6; // Réduction de 20%
+            }
+
+            // Récupérer les valeurs sélectionnées pour le nouvel iPhone
+            const modeleNouveau = document.getElementById("modelNouveau").value;
+            const prixNouveau = prixBase[modeleNouveau];
+
+            // Calculer la différence de prix
+            const difference = prixNouveau - prixActuel;
+
+            // Afficher le résultat
+            if (difference > 0) {
+                document.getElementById("result").innerText = `Vous devez ajouter : ${difference.toFixed(0)} FCFA`;
+            } else if (difference < 0) {
+                document.getElementById("result").innerText = `Vous recevez un crédit de : ${Math.abs(difference).toFixed(0)} FCFA`;
+            } else {
+                document.getElementById("result").innerText = "Aucun montant à ajouter.";
+            }
+        }
+    </script>
+
+</body>
+</html>
